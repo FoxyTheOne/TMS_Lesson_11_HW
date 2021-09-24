@@ -2,6 +2,7 @@ package com.tms.lesson11.prog00Multithreading;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * 0. Создать класс поток, который генерирует массив целых чисел из 10 элементов,
@@ -14,7 +15,7 @@ public class MaxElementRunnable implements Runnable {
     }
 
     private void doInnerLogic() {
-        ArrayList<Integer> randomArray = new ArrayList<>(10);
+        List<Integer> randomArray = new ArrayList<>(10);
 
         for (int i = 0; i < 10; i++) {
             randomArray.add((int) (Math.random() * (99 - 2)) + 2); // Диапазон целых чисел [2; 99)(99 не включительно). Формула (Math.random()*(b-a))+a) = [a; b)

@@ -2,7 +2,7 @@ package com.tms.lesson11.prog01Multithreading;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
 
 /**
  * 1. Создать класс поток, который создает средствами Java файл и записать в него рандомно сгенерированный массив из 10 целых чисел.
@@ -37,7 +37,7 @@ public class RandomArrayWriterRunnable implements Runnable {
     }
 
     private String createRandomArray() {
-        ArrayList<Integer> randomArray = new ArrayList<>(10);
+        List<Integer> randomArray = new ArrayList<>(10);
 
         for (int i = 0; i < 10; i++) {
             randomArray.add((int) (Math.random() * (99 - 2)) + 2); // Диапазон целых чисел [2; 99)(99 не включительно). Формула (Math.random()*(b-a))+a) = [a; b)

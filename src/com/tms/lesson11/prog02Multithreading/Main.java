@@ -1,7 +1,5 @@
 package com.tms.lesson11.prog02Multithreading;
 
-import com.tms.lesson11.prog01Multithreading.RandomArrayWriterRunnable;
-
 /**
  * 2. Создать класс с синхронизированным методом, который выводит на экран имя текущего потока, текущее время и вызывает sleep на 5 секунд.
  * Запустить 10 потоков, которые вызывают этот метод от созданного объекта.
